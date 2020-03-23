@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <h1>This is the page for Counting Words and their frequency...</h1>
+    <h2>There are {{words}} words in the text</h2>
+    <h2>Your Entered Text is: </h2>
+    <p>{{para}}</p>
+    <h2>The frequency is:</h2>
+    <p>{{freq}}</p>
+
+  
+    <table border="5px"> 
+        <tr align="center">
+            <th>Word</th>
+            <th>Occurence</th>
+        </tr>
+        {% for i, j in freq.items %}
+        <tr align="center">
+            <td>{{i}}</td>
+            <td>{{j}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

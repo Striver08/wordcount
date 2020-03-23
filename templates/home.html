@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Welcome to the HomePage!!!</h1>
+    <h3>This is the Word Counter</h3> 
+    
+    <form action="count" method="POST">
+        {% csrf_token %}
+        <label for="text">Enter the text here</label>
+        <br>
+        <textarea name="para" id="text" cols="30" rows="10" placeholder="Enter"></textarea>
+        <br><br>
+        <input type="file" name="file" id="" accept="application/pdf">
+        <br><br><br>
+        <input type="submit" name="submit" id="" >
+        
+
+    </form>
+</body>
+</html>
+
